@@ -47,10 +47,10 @@ const Todo = () => {
     const deleteItem=(idToBeDeleted)=>{
       
 
-        items=items.filter((ele)=>{
+       
+        setItems(items.filter((ele)=>{
             return ele.id!=idToBeDeleted;
-        })
-        setItems(items)
+        }))
     }
 
     // remove all the elements
